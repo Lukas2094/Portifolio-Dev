@@ -37,7 +37,7 @@ export function SkillsSection() {
         <section id="habilidades" className="space-y-10">
             {/* Front-end */}
             <div>
-                <h2 className="text-2xl font-bold text-black mb-4">Linguagens Front-end</h2>
+                <h2 className="text-2xl font-bold text-white mb-4">Linguagens Front-end</h2>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                     {skills.frontend.map(({ icon: Icon, label, color }, i) => (
                         <div
@@ -53,7 +53,7 @@ export function SkillsSection() {
 
             {/* Back-end */}
             <div>
-                <h2 className="text-2xl font-bold text-black mb-4">Linguagens Back-end</h2>
+                <h2 className="text-2xl font-bold text-white mb-4">Linguagens Back-end</h2>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                     {skills.backend.map(({ icon: Icon, label, color }, i) => (
                         <div
@@ -69,7 +69,7 @@ export function SkillsSection() {
 
             {/* Bancos de Dados */}
             <div>
-                <h2 className="text-2xl font-bold text-black mb-4">Bancos de Dados</h2>
+                <h2 className="text-2xl font-bold text-white mb-4">Bancos de Dados</h2>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                     {skills.databases.map(({ icon: Icon, label, color }, i) => (
                         <div
@@ -85,7 +85,7 @@ export function SkillsSection() {
 
             {/* Outras Tecnologias */}
             <div>
-                <h2 className="text-2xl font-bold text-black mb-4">Outras Tecnologias</h2>
+                <h2 className="text-2xl font-bold text-white mb-4">Outras Tecnologias</h2>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                     {skills.others.map(({ icon: Icon, label, color }, i) => (
                         <div

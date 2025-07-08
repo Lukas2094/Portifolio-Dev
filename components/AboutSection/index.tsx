@@ -2,12 +2,16 @@ import { log } from "console";
 import React from "react";
 
 export function AboutSection(profile: any) {
-    console.log('Profile data:', profile);
+    
+    if (!profile || !profile.profile) {
+        console.error("Perfil não encontrado ou inválido");
+        return null;
+    }
     
     return (
         <section id="sobremim" className="space-y-6">
-            <h2 className="text-2xl font-bold">Sobre Mim</h2>
-            <div className="flex flex-col md:flex-row items-center gap-10">
+            <h2 className="text-2xl font-bold text-white">Sobre Mim</h2>
+            <div className="flex flex-col md:flex-row items-center gap-20">
                 <div className="md:w-1/2 space-y-4">
                     <p className="text-lg text-justify text-white">
                         Sou um desenvolvedor full-stack com experiência em React, Node.js, Next.js, e bancos de dados relacionais e não-relacionais. Gosto de construir soluções performáticas, intuitivas e escaláveis.
