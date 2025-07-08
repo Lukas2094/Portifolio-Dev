@@ -3,6 +3,8 @@ import { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 import { MobileHeader } from '@/components/MobileHeader';
 import { FooterSection } from '@/components/Footer';
+import BackgroundParticles from '@/components/BackgroundParticles/BackgroundParticles';
+
 
 const montserrat = Montserrat({ subsets: ['latin'], weight: ['400', '500', '700'] });
 
@@ -14,9 +16,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR">
-      <body className={`${montserrat.className} min-h-screen bg-gray-50 text-gray-900`}>
+      <body className={`${montserrat.className} relative min-h-screen text-white`}>
+        <BackgroundParticles />
         <MobileHeader />
-        <div className="p-6 max-w-5xl mx-auto">{children}</div>
+        <div className="relative z-10 p-6 max-w-5xl mx-auto">{children}</div>
         <FooterSection />
       </body>
     </html>

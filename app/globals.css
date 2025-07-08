@@ -24,3 +24,23 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ea580c;
+  border-radius: 10px;
+  border: 2px solid #1e1e1e;
+}
+
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #0cc9ea #1e1e1e;
+}

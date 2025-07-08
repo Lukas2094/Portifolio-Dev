@@ -5,8 +5,8 @@ import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 export function FooterSection() {
     return (
         <footer className="mt-12 py-20 border-t border-gray-300 bg-[#0f172a] text-white">
-            <div className="flex flex-col md:flex-row justify-between gap-10 text-center md:text-left max-w-5xl mx-auto px-10">
-                <section id="contato" className="space-y-6 md:w-1/2">
+            <div className="flex flex-col md:flex-row justify-between gap-10 text-center md:text-left max-w-5xl mx-auto px-20">
+                <section id="contato" className="space-y-6 md:w-1/2 mr-14">
                     <h2 className="text-2xl font-bold">Contato</h2>
                     <p className="text-lg">
                         Você pode me contatar via email:
@@ -45,12 +45,21 @@ export function FooterSection() {
                 <section id="curriculo" className="space-y-6 md:w-1/2 ">
                     <h2 className="text-2xl font-bold">Currículo</h2>
                     <p className="text-lg">
-                        Baixe meu currículo em PDF: <br/>
-                        <Link href="/curriculo.pdf" download className="text-blue-400 underline ml-1">
+                        Baixe meu currículo em PDF: <br />
+                        <Link href="/pdf/curriculo.pdf" download className="text-blue-400 underline ml-1">
                             Clique aqui
                         </Link>
                     </p>
                 </section>
+            </div>
+
+            <div className="mt-8 text-center space-y-2">
+                <p className="text-sm text-gray-400">
+                    Feito com <span className="text-blue-400 font-semibold">Next.js</span>, <span className="text-blue-400 font-semibold">React</span> e <span className="text-blue-400 font-semibold">Tailwind CSS</span>
+                </p>
+                <p className="text-sm text-gray-400">
+                    © {new Date().getFullYear()} Lucas Santos da Silva. Todos os direitos reservados.
+                </p>
             </div>
         </footer>
     );

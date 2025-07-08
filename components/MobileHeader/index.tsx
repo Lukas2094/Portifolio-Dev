@@ -16,7 +16,7 @@ export function MobileHeader() {
                             <img src="/imgs/LS-Logo.png" alt="Logo" className="h-10 w-10 object-contain" />
                         </a>
                         
-                        <h1 className="text-xl font-bold">Lucas Santos</h1>
+                        <h1 className="text-xl font-bold">Lucas Santos da Silva</h1>
                     </div>
                     <button
                         className="md:hidden text-white focus:outline-none"
