@@ -8,9 +8,9 @@ export function MobileHeader() {
     const [open, setOpen] = useState(false);
 
     return (
-        <header className="p-4 bg-[#1b1f3b] text-white shadow-md">
+        <header className="p-5 bg-[#1b1f3b] text-white shadow-md">
             <div className="flex flex-col md:flex-row md:justify-between md:items-center">
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center md:ml-36">
                     <div className="flex items-center gap-3">
                         <a href="/">
                             <img src="/imgs/LS-Logo.png" alt="Logo" className="h-10 w-10 object-contain" />
@@ -27,7 +27,7 @@ export function MobileHeader() {
                 </div>
                 <nav
                     className={`${open ? 'flex' : 'hidden'
-                        } flex-col mt-4 gap-3 text-sm md:flex md:flex-row md:items-center md:mt-0 md:gap-4 md:text-base`}
+                        } flex-col mt-4 gap-3 text-sm md:flex md:flex-row md:items-center md:mt-0 md:gap-4 md:text-base md:mr-30`}
                 >
                     <a href="#sobremim" className="hover:text-purple-300 transition">Sobre Mim</a>
                     <a href="#habilidades" className="hover:text-purple-300 transition">Habilidades</a>
