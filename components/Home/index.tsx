@@ -1,13 +1,14 @@
 import React from 'react';
 import { SkillsSection } from '../Skills';
 import { AboutSection } from '../AboutSection';
-import { FooterSection } from '../Footer';
+import { getGitHubProfile } from '@/lib/github';
 
-export function HomePage() {
+export async function HomePage() {
+    const profile = await getGitHubProfile(); 
     return (
         <>
         <section className="space-y-12">
-            <AboutSection />
+            <AboutSection profile={profile} />
             <SkillsSection />
         </section>
         </>
