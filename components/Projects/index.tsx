@@ -1,3 +1,6 @@
+import React from "react";
+
+// ProjectsPage.tsx
 export function ProjectsPage({ repos }: { repos: any[] }) {
     return (
         <section className="space-y-6">

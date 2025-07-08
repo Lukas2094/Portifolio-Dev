@@ -2,6 +2,7 @@ import './globals.css';
 import { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 import { MobileHeader } from '@/components/MobileHeader';
+import { FooterSection } from '@/components/Footer';
 
 const montserrat = Montserrat({ subsets: ['latin'], weight: ['400', '500', '700'] });
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={`${montserrat.className} min-h-screen bg-gray-50 text-gray-900`}>
         <MobileHeader />
         <div className="p-6 max-w-5xl mx-auto">{children}</div>
+        <FooterSection />
       </body>
     </html>
   );
