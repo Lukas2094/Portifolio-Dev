@@ -15,13 +15,13 @@ export default function BackgroundParticles() {
             init={particlesInit}
             options={{
                 fullScreen: { enable: true, zIndex: -1 },
-                background: { color: '#ea580c' },
+                background: { color: '#1a1a2e' },
                 particles: {
                     number: { value: 180 },
-                    color: { value: '#cecece' },
+                    color: { value: '#e94560' },
                     links: {
                         enable: true,
-                        color: '#f8f8f8',
+                        color: '#e94560',
                         distance: 150,
                         opacity: 0.3,
                         width: 1,
@@ -38,7 +38,7 @@ export default function BackgroundParticles() {
                 },
                 interactivity: {
                     events: {
-                        onHover: { enable: true, mode: 'attract' },
+                        onHover: { enable: true, mode: 'repulse' },
                     },
                     modes: {
                         attract: {
