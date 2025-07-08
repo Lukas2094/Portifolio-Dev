@@ -8,12 +8,12 @@ export function MobileHeader() {
     const [open, setOpen] = useState(false);
 
     return (
-        <header className="p-5 bg-[#1b1f3b] text-white shadow-md">
+        <header className="p-4 bg-[#1b1f3b] text-white shadow-md">
             <div className="flex flex-col md:flex-row md:justify-between md:items-center">
                 <div className="flex justify-between items-center md:ml-36">
                     <div className="flex items-center gap-3">
                         <a href="/">
-                            <img src="/imgs/LS-Logo.png" alt="Logo" className="h-10 w-10 object-contain" />
+                            <img src="/imgs/LS-Logo.png" alt="Logo" className="h-15 w-15 object-contain" />
                         </a>
                         
                         <h1 className="text-xl font-bold">Lucas Santos da Silva</h1>
