@@ -1,5 +1,5 @@
 import { FaReact, FaAngular, FaVuejs, FaPhp, FaNodeJs, FaPython, FaJava, FaGem, FaDatabase, FaCode, FaSass, FaLaravel } from 'react-icons/fa';
-import { SiNextdotjs, SiNuxtdotjs, SiMysql, SiMongodb, SiPostgresql, SiTypescript, SiGraphql, SiRedis, SiSharp, SiGo, SiHtml5, SiCss3, SiJavascript, SiRuby, SiShell, SiDocker, SiKubernetes, SiJest, SiCypress, SiSwagger, SiFirebase, SiVite, SiTailwindcss, SiPrisma, SiEslint, SiPrettier, SiRedux, SiReactrouter, SiNestjs, SiZendesk } from 'react-icons/si';
+import { SiNextdotjs, SiNuxtdotjs, SiMysql, SiMongodb, SiPostgresql, SiTypescript, SiGraphql, SiRedis, SiSharp, SiGo, SiHtml5, SiCss3, SiJavascript, SiRuby, SiShell, SiDocker, SiKubernetes, SiJest, SiCypress, SiSwagger, SiFirebase, SiVite, SiTailwindcss, SiPrisma, SiEslint, SiPrettier, SiRedux, SiReactrouter, SiNestjs, SiZendesk, SiPrimevue, SiVuetify } from 'react-icons/si';
 
 const skills = {
     frontend: [
@@ -37,6 +37,8 @@ const skills = {
         { icon: FaCode, label: 'styled-components', color: '#db7093' },
         { icon: FaCode, label: 'Material UI', color: '#007FFF' },
         { icon: FaSass, label: 'SASS / SCSS', color: '#cd6799' },
+        { icon: SiPrimevue, label: 'PrimeVue', color: '#3B82F6' },
+        { icon: SiVuetify, label: 'Vuetify', color: '#1867C0' },
         { icon: SiDocker, label: 'Docker', color: '#2496ed' },
         { icon: SiJest, label: 'Jest', color: '#99425b' },
         { icon: SiCypress, label: 'Cypress', color: '#15509e' },
