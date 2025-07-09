@@ -113,47 +113,58 @@ export function SkillsSection() {
             <div>
                 <h2 className="text-2xl font-bold text-white mb-4">Outras Tecnologias</h2>
 
-                {/* Botões personalizados */}
                 <div className="relative">
                     <Swiper
-                        modules={[Navigation, Pagination]}
-                        navigation={{
-                            nextEl: '.custom-next',
-                            prevEl: '.custom-prev',
-                        }}
-                        pagination={false}
-                        spaceBetween={20}
-                        slidesPerView={4}
-                        breakpoints={{
-                            640: { slidesPerView: 3 },
-                            768: { slidesPerView: 4 },
-                            1024: { slidesPerView: 5 },
-                        }}
-                        className="pb-12"
+                    modules={[Navigation, Pagination]}
+                    navigation={{
+                        nextEl: '.custom-next',
+                        prevEl: '.custom-prev',
+                    }}
+                    pagination={false}
+                    spaceBetween={16}
+                    slidesPerView={2}  
+                    breakpoints={{
+                        640: { slidesPerView: 2 },  
+                        768: { slidesPerView: 3 },  
+                        1024: { slidesPerView: 4 }, 
+                        1280: { slidesPerView: 5 },
+                    }}
+                    className="pb-12"
                     >
-                        {skills.others.map(({ icon: Icon, label, color }, i) => (
-                            <SwiperSlide key={i}>
-                                <div className="flex flex-col items-center justify-center p-4 md:p-6 rounded-xl shadow-md bg-[#1b1f3b] transform transition-transform hover:scale-105 hover:shadow-xl">
-                                    <Icon className="w-9 h-9 md:w-12 md:h-12" color={color} />
-                                    <p className="mt-2 text-center font-medium text-white text-sm md:text-base">{label}</p>
-                                </div>
-                            </SwiperSlide>
-                        ))}
+                    {skills.others.map(({ icon: Icon, label, color }, i) => (
+                        <SwiperSlide key={i}>
+                        <div
+                            className="flex flex-col items-center justify-center p-4 md:p-6 rounded-xl shadow-md bg-[#1b1f3b] transform transition-transform hover:scale-105 hover:shadow-xl"
+                            style={{ 
+                            width: '160px',        
+                            height: '160px',       
+                            margin: '0 auto',      
+                            boxSizing: 'border-box',
+                            }}
+                        >
+                            <Icon className="w-10 h-10 md:w-12 md:h-12" color={color} />
+                            <p className="mt-2 text-center font-medium text-white text-sm md:text-base break-words">
+                            {label}
+                            </p>
+                        </div>
+                        </SwiperSlide>
+                    ))}
                     </Swiper>
 
-                    {/* Botões visíveis posicionados */}
+                    {/* Botões posicionados */}
                     <div className="absolute top-1/2 left-0 transform -translate-y-1/2 z-10">
-                        <button className="custom-prev text-4xl bg-[#1b1f3b] text-white p-2 rounded-full hover:bg-[#2d335c]">
-                            ‹
-                        </button>
+                    <button className="custom-prev text-4xl bg-[#1b1f3b] text-white p-2 rounded-full hover:bg-[#2d335c]">
+                        ‹
+                    </button>
                     </div>
                     <div className="absolute top-1/2 right-0 transform -translate-y-1/2 z-10">
-                        <button className="custom-next text-4xl bg-[#1b1f3b] text-white p-2 rounded-full hover:bg-[#2d335c]">
-                            ›
-                        </button>
+                    <button className="custom-next text-4xl bg-[#1b1f3b] text-white p-2 rounded-full hover:bg-[#2d335c]">
+                        ›
+                    </button>
                     </div>
                 </div>
             </div>
+
         </section>
     );
 };
