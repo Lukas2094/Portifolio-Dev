@@ -43,14 +43,14 @@ export function FooterSection() {
             >
                 <FaLinkedin color="#0e76a8" />
             </Link>
-            <Link
+            {/* <Link
               href="https://www.instagram.com/lucas.silva2094?igsh=cXRsZ3NjdHZldnh2"
               target="_blank"
               rel="noopener noreferrer"
               className="transition transform hover:scale-110"
             >
                 <FaInstagram color="#E1306C" />
-            </Link>
+            </Link> */}
             <Link
               href="https://wa.me/5511949322230"
               target="_blank"

@@ -1,5 +1,12 @@
+'use client';
+
 import { FaReact, FaAngular, FaVuejs, FaPhp, FaNodeJs, FaPython, FaJava, FaGem, FaDatabase, FaCode, FaSass, FaLaravel } from 'react-icons/fa';
-import { SiNextdotjs, SiNuxtdotjs, SiMysql, SiMongodb, SiPostgresql, SiTypescript, SiGraphql, SiRedis, SiSharp, SiGo, SiHtml5, SiCss3, SiJavascript, SiRuby, SiShell, SiDocker, SiKubernetes, SiJest, SiCypress, SiSwagger, SiFirebase, SiVite, SiTailwindcss, SiPrisma, SiEslint, SiPrettier, SiRedux, SiReactrouter, SiNestjs, SiZendesk, SiPrimevue, SiVuetify, SiReactquery } from 'react-icons/si';
+import { SiNextdotjs, SiNuxtdotjs, SiMysql, SiMongodb, SiPostgresql, SiTypescript, SiGraphql, SiRedis, SiSharp, SiGo, SiHtml5, SiCss3, SiJavascript, SiRuby, SiShell, SiDocker, SiKubernetes, SiJest, SiCypress, SiSwagger, SiFirebase, SiVite, SiTailwindcss, SiPrisma, SiEslint, SiPrettier, SiRedux, SiReactrouter, SiNestjs, SiZendesk, SiPrimevue, SiVuetify, SiReactquery, SiChakraui } from 'react-icons/si';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 const skills = {
     frontend: [
@@ -20,8 +27,7 @@ const skills = {
         { icon: SiZendesk, label: 'Zendesk', color: '#03363D' },
         { icon: FaNodeJs, label: 'Node.js', color: '#3c873a' },
         { icon: SiNestjs, label: 'NestJS', color: '#e0234e' },
-        ],
-
+    ],
     databases: [
         { icon: SiMysql, label: 'MySQL', color: '#4479a1' },
         { icon: SiPostgresql, label: 'PostgreSQL', color: '#336791' },
@@ -35,8 +41,9 @@ const skills = {
         { icon: SiReactquery, label: 'React Query', color: '#FF4154' },
         { icon: FaCode, label: 'REST APIs', color: '#61dafb' },
         { icon: FaCode, label: 'JSON, XML', color: '#f0db4f' },
-        { icon: FaCode, label: 'styled-components', color: '#db7093' },
+        { icon: FaCode, label: 'styled-comp.', color: '#db7093' },
         { icon: FaCode, label: 'Material UI', color: '#007FFF' },
+        { icon: SiChakraui, label: 'Chakraui', color: '#034383' },
         { icon: FaSass, label: 'SASS / SCSS', color: '#cd6799' },
         { icon: SiPrimevue, label: 'PrimeVue', color: '#3B82F6' },
         { icon: SiVuetify, label: 'Vuetify', color: '#1867C0' },
@@ -105,16 +112,46 @@ export function SkillsSection() {
             {/* Outras Tecnologias */}
             <div>
                 <h2 className="text-2xl font-bold text-white mb-4">Outras Tecnologias</h2>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-                    {skills.others.map(({ icon: Icon, label, color }, i) => (
-                        <div
-                            key={i}
-                            className="flex flex-col items-center justify-center p-4 md:p-6 rounded-xl shadow-md bg-[#1b1f3b] transform transition-transform hover:scale-105 hover:shadow-xl"
-                        >
-                            <Icon className="w-9 h-9 md:w-12 md:h-12" color={color} />
-                            <p className="mt-2 text-center font-medium text-white text-sm md:text-base">{label}</p>
-                        </div>
-                    ))}
+
+                {/* Botões personalizados */}
+                <div className="relative">
+                    <Swiper
+                        modules={[Navigation, Pagination]}
+                        navigation={{
+                            nextEl: '.custom-next',
+                            prevEl: '.custom-prev',
+                        }}
+                        pagination={false}
+                        spaceBetween={20}
+                        slidesPerView={4}
+                        breakpoints={{
+                            640: { slidesPerView: 3 },
+                            768: { slidesPerView: 4 },
+                            1024: { slidesPerView: 5 },
+                        }}
+                        className="pb-12"
+                    >
+                        {skills.others.map(({ icon: Icon, label, color }, i) => (
+                            <SwiperSlide key={i}>
+                                <div className="flex flex-col items-center justify-center p-4 md:p-6 rounded-xl shadow-md bg-[#1b1f3b] transform transition-transform hover:scale-105 hover:shadow-xl">
+                                    <Icon className="w-9 h-9 md:w-12 md:h-12" color={color} />
+                                    <p className="mt-2 text-center font-medium text-white text-sm md:text-base">{label}</p>
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+
+                    {/* Botões visíveis posicionados */}
+                    <div className="absolute top-1/2 left-0 transform -translate-y-1/2 z-10">
+                        <button className="custom-prev text-4xl bg-[#1b1f3b] text-white p-2 rounded-full hover:bg-[#2d335c]">
+                            ‹
+                        </button>
+                    </div>
+                    <div className="absolute top-1/2 right-0 transform -translate-y-1/2 z-10">
+                        <button className="custom-next text-4xl bg-[#1b1f3b] text-white p-2 rounded-full hover:bg-[#2d335c]">
+                            ›
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>

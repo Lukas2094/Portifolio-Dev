@@ -1,4 +1,5 @@
 'use client';
+
 import React, { useState } from "react";
 import type { ReactElement } from "react";
 import {
@@ -45,12 +46,18 @@ const languageIcons: Record<string, ReactElement> = {
 };
 
 export function ProjectsPage({ repos }: { repos: Repo[] }) {
-  const [visibleCount, setVisibleCount] = useState(4);
+  const [currentPage, setCurrentPage] = useState(1);
+  const perPage = 8;
 
   const sortedRepos = [...repos].sort((a, b) => a.name.localeCompare(b.name));
-  const visibleRepos = sortedRepos.slice(0, visibleCount);
+  const totalPages = Math.ceil(sortedRepos.length / perPage);
 
-  const showMore = () => setVisibleCount((prev) => prev + 4);
+  const startIndex = (currentPage - 1) * perPage;
+  const visibleRepos = sortedRepos.slice(startIndex, startIndex + perPage);
+
+  const handlePageClick = (page: number) => {
+    setCurrentPage(page);
+  };
 
   return (
     <section className="space-y-6">
@@ -78,16 +85,37 @@ export function ProjectsPage({ repos }: { repos: Repo[] }) {
         ))}
       </div>
 
-      {visibleCount < sortedRepos.length && (
-        <div className="text-center">
+      {/* Paginação */}
+      <div className="flex justify-center items-center gap-2 mt-6 flex-wrap">
+        <button
+          onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+          disabled={currentPage === 1}
+          className="px-3 py-1 bg-gray-700 text-white rounded hover:bg-gray-800 disabled:opacity-50"
+        >
+          Anterior
+        </button>
+
+        {Array.from({ length: totalPages }, (_, i) => (
           <button
-            onClick={showMore}
-            className="mt-6 px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+            key={i}
+            onClick={() => handlePageClick(i + 1)}
+            className={`px-3 py-1 rounded ${currentPage === i + 1
+              ? 'bg-blue-600 text-white'
+              : 'bg-gray-300 dark:bg-gray-700 text-black dark:text-white'
+              } hover:bg-blue-700`}
           >
-            Ver mais
+            {i + 1}
           </button>
-        </div>
-      )}
+        ))}
+
+        <button
+          onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
+          disabled={currentPage === totalPages}
+          className="px-3 py-1 bg-gray-700 text-white rounded hover:bg-gray-800 disabled:opacity-50"
+        >
+          Próximo
+        </button>
+      </div>
     </section>
   );
 };

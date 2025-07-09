@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={`${montserrat.className} relative min-h-screen text-white`}>
         <BackgroundParticles />
         <MobileHeader />
-        <div className="relative z-10 p-6 max-w-6xl xl mx-auto">{children}</div>
+        <div className="relative z-10 p-6 max-w-6xl xl mx-auto mt-8">{children}</div>
         <FooterSection />
       </body>
     </html>
