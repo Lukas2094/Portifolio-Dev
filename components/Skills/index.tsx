@@ -1,12 +1,12 @@
-import { FaReact, FaAngular, FaVuejs, FaPhp, FaNodeJs, FaPython, FaJava, FaGem, FaDatabase, FaCode } from 'react-icons/fa';
-import { SiNextdotjs, SiNuxtdotjs, SiMysql, SiMongodb, SiPostgresql, SiTypescript, SiGraphql, SiRedis, SiSharp, SiGo, SiHtml5, SiCss3, SiJavascript, SiRuby, SiShell } from 'react-icons/si';
+import { FaReact, FaAngular, FaVuejs, FaPhp, FaNodeJs, FaPython, FaJava, FaGem, FaDatabase, FaCode, FaSass } from 'react-icons/fa';
+import { SiNextdotjs, SiNuxtdotjs, SiMysql, SiMongodb, SiPostgresql, SiTypescript, SiGraphql, SiRedis, SiSharp, SiGo, SiHtml5, SiCss3, SiJavascript, SiRuby, SiShell, SiDocker, SiKubernetes, SiJest, SiCypress, SiSwagger, SiFirebase, SiVite, SiTailwindcss, SiPrisma, SiEslint, SiPrettier, SiRedux, SiReactrouter, SiNestjs } from 'react-icons/si';
 
 const skills = {
     frontend: [
-        { icon: SiJavascript, label: 'JavaScript (ES6+)', color: '#f7df1e' },
         { icon: SiTypescript, label: 'TypeScript', color: '#3178c6' },
+        { icon: SiJavascript, label: 'JavaScript', color: '#f7df1e' },
         { icon: SiHtml5, label: 'HTML5', color: '#e34f26' },
-        { icon: SiCss3, label: 'CSS3 / SCSS / SASS', color: '#264de4' },
+        { icon: SiCss3, label: 'CSS3', color: '#264de4' },
         { icon: FaReact, label: 'React', color: '#61dafb' },
         { icon: SiNextdotjs, label: 'Next.js', color: '#000000' },
         { icon: FaAngular, label: 'Angular', color: '#dd0031' },
@@ -18,7 +18,9 @@ const skills = {
         { icon: SiSharp, label: 'C#', color: '#68217a' },
         { icon: FaPhp, label: 'PHP', color: '#777bb3' },
         { icon: FaNodeJs, label: 'Node.js', color: '#3c873a' },
-    ],
+        { icon: SiNestjs, label: 'NestJS', color: '#e0234e' },
+        ],
+
     databases: [
         { icon: SiMysql, label: 'MySQL', color: '#4479a1' },
         { icon: SiPostgresql, label: 'PostgreSQL', color: '#336791' },
@@ -27,8 +29,21 @@ const skills = {
     ],
     others: [
         { icon: SiGraphql, label: 'GraphQL', color: '#e535ab' },
+        { icon: SiRedux, label: 'Redux', color: '#764abc' },
+        { icon: SiReactrouter, label: 'React Router', color: '#ca4245' },
         { icon: FaCode, label: 'REST APIs', color: '#61dafb' },
         { icon: FaCode, label: 'JSON, XML', color: '#f0db4f' },
+        { icon: FaCode, label: 'styled-components', color: '#db7093' },
+        { icon: FaCode, label: 'Material UI', color: '#007FFF' },
+        { icon: FaSass, label: 'SASS / SCSS', color: '#cd6799' },
+        { icon: SiDocker, label: 'Docker', color: '#2496ed' },
+        { icon: SiJest, label: 'Jest', color: '#99425b' },
+        { icon: SiCypress, label: 'Cypress', color: '#15509e' },
+        { icon: SiFirebase, label: 'Firebase', color: '#FFCA28' },
+        { icon: SiVite, label: 'Vite', color: '#646cff' },
+        { icon: SiTailwindcss, label: 'Tailwind CSS', color: '#06B6D4' },
+        { icon: SiPrisma, label: 'Prisma ORM', color: '#2D3748' },
+        { icon: SiEslint, label: 'ESLint', color: '#4B32C3' },
     ],
 };
 

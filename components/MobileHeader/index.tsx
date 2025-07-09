@@ -16,7 +16,7 @@ export function MobileHeader() {
     };
 
     return (
-        <header className="p-4 bg-[#1b1f3b] text-white shadow-md">
+        <header className="p-4 bg-[#e48a14] md:bg-[#1b263b] text-white shadow-md">
             <div className="flex flex-col md:flex-row md:justify-between md:items-center">
                 <div className="flex justify-between items-center md:ml-36">
                     <div className="flex items-center gap-3">
