@@ -1,5 +1,5 @@
-import { FaReact, FaAngular, FaVuejs, FaPhp, FaNodeJs, FaPython, FaJava, FaGem, FaDatabase, FaCode, FaSass } from 'react-icons/fa';
-import { SiNextdotjs, SiNuxtdotjs, SiMysql, SiMongodb, SiPostgresql, SiTypescript, SiGraphql, SiRedis, SiSharp, SiGo, SiHtml5, SiCss3, SiJavascript, SiRuby, SiShell, SiDocker, SiKubernetes, SiJest, SiCypress, SiSwagger, SiFirebase, SiVite, SiTailwindcss, SiPrisma, SiEslint, SiPrettier, SiRedux, SiReactrouter, SiNestjs } from 'react-icons/si';
+import { FaReact, FaAngular, FaVuejs, FaPhp, FaNodeJs, FaPython, FaJava, FaGem, FaDatabase, FaCode, FaSass, FaLaravel } from 'react-icons/fa';
+import { SiNextdotjs, SiNuxtdotjs, SiMysql, SiMongodb, SiPostgresql, SiTypescript, SiGraphql, SiRedis, SiSharp, SiGo, SiHtml5, SiCss3, SiJavascript, SiRuby, SiShell, SiDocker, SiKubernetes, SiJest, SiCypress, SiSwagger, SiFirebase, SiVite, SiTailwindcss, SiPrisma, SiEslint, SiPrettier, SiRedux, SiReactrouter, SiNestjs, SiZendesk } from 'react-icons/si';
 
 const skills = {
     frontend: [
@@ -15,8 +15,9 @@ const skills = {
     ],
     backend: [
         { icon: FaPython, label: 'Python', color: '#3776ab' },
-        { icon: SiSharp, label: 'C#', color: '#68217a' },
         { icon: FaPhp, label: 'PHP', color: '#777bb3' },
+        { icon: FaLaravel, label: 'Laravel', color: '#fb503b' },
+        { icon: SiZendesk, label: 'Zendesk', color: '#03363D' },
         { icon: FaNodeJs, label: 'Node.js', color: '#3c873a' },
         { icon: SiNestjs, label: 'NestJS', color: '#e0234e' },
         ],
