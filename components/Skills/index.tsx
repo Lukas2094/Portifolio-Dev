@@ -113,7 +113,7 @@ export function SkillsSection() {
             <div>
                 <h2 className="text-2xl font-bold text-white mb-4">Outras Tecnologias</h2>
 
-                <div className="relative">
+                <div className="relative bg-[#1b1f3b] p-6 rounded-xl shadow-md">
                     <Swiper
                     modules={[Navigation, Pagination]}
                     navigation={{
@@ -134,7 +134,7 @@ export function SkillsSection() {
                     {skills.others.map(({ icon: Icon, label, color }, i) => (
                         <SwiperSlide key={i}>
                         <div
-                            className="flex flex-col items-center justify-center p-4 md:p-6 rounded-xl shadow-md bg-[#1b1f3b] transform transition-transform hover:scale-105 hover:shadow-xl"
+                            className="flex flex-col items-center justify-center p-4 md:p-6 rounded-xl   transform transition-transform hover:scale-105 hover:shadow-xl"
                             style={{ 
                             width: '160px',        
                             height: '160px',       
