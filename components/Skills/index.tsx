@@ -38,14 +38,14 @@ export function SkillsSection() {
             {/* Front-end */}
             <div>
                 <h2 className="text-2xl font-bold text-white mb-4">Linguagens Front-end</h2>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
                     {skills.frontend.map(({ icon: Icon, label, color }, i) => (
                         <div
                             key={i}
-                            className="flex flex-col items-center justify-center p-6 rounded-xl shadow-md bg-[#1b1f3b] transform transition-transform hover:scale-105 hover:shadow-xl"
+                            className="flex flex-col items-center justify-center p-4 md:p-6 rounded-xl shadow-md bg-[#1b1f3b] transform transition-transform hover:scale-105 hover:shadow-xl"
                         >
-                            <Icon size={48} color={color} />
-                            <p className="mt-2 text-center font-medium text-white">{label}</p>
+                            <Icon className="w-9 h-9 md:w-12 md:h-12" color={color} />
+                            <p className="mt-2 text-center font-medium text-white text-sm md:text-base">{label}</p>
                         </div>
                     ))}
                 </div>
@@ -54,14 +54,14 @@ export function SkillsSection() {
             {/* Back-end */}
             <div>
                 <h2 className="text-2xl font-bold text-white mb-4">Linguagens Back-end</h2>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
                     {skills.backend.map(({ icon: Icon, label, color }, i) => (
                         <div
                             key={i}
-                            className="flex flex-col items-center justify-center p-6 rounded-xl shadow-md bg-[#1b1f3b] transform transition-transform hover:scale-105 hover:shadow-xl"
+                            className="flex flex-col items-center justify-center p-4 md:p-6 rounded-xl shadow-md bg-[#1b1f3b] transform transition-transform hover:scale-105 hover:shadow-xl"
                         >
-                            <Icon size={48} color={color} />
-                            <p className="mt-2 text-center font-medium text-white">{label}</p>
+                            <Icon className="w-9 h-9 md:w-12 md:h-12" color={color} />
+                            <p className="mt-2 text-center font-medium text-white text-sm md:text-base">{label}</p>
                         </div>
                     ))}
                 </div>
@@ -70,14 +70,14 @@ export function SkillsSection() {
             {/* Bancos de Dados */}
             <div>
                 <h2 className="text-2xl font-bold text-white mb-4">Bancos de Dados</h2>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
                     {skills.databases.map(({ icon: Icon, label, color }, i) => (
                         <div
                             key={i}
-                            className="flex flex-col items-center justify-center p-6 rounded-xl shadow-md bg-[#1b1f3b] transform transition-transform hover:scale-105 hover:shadow-xl"
+                            className="flex flex-col items-center justify-center p-4 md:p-6 rounded-xl shadow-md bg-[#1b1f3b] transform transition-transform hover:scale-105 hover:shadow-xl"
                         >
-                            <Icon size={48} color={color} />
-                            <p className="mt-2 text-center font-medium text-white">{label}</p>
+                            <Icon className="w-9 h-9 md:w-12 md:h-12" color={color} />
+                            <p className="mt-2 text-center font-medium text-white text-sm md:text-base">{label}</p>
                         </div>
                     ))}
                 </div>
@@ -86,18 +86,18 @@ export function SkillsSection() {
             {/* Outras Tecnologias */}
             <div>
                 <h2 className="text-2xl font-bold text-white mb-4">Outras Tecnologias</h2>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
                     {skills.others.map(({ icon: Icon, label, color }, i) => (
                         <div
                             key={i}
-                            className="flex flex-col items-center justify-center p-6 rounded-xl shadow-md bg-[#1b1f3b] transform transition-transform hover:scale-105 hover:shadow-xl"
+                            className="flex flex-col items-center justify-center p-4 md:p-6 rounded-xl shadow-md bg-[#1b1f3b] transform transition-transform hover:scale-105 hover:shadow-xl"
                         >
-                            <Icon size={48} color={color} />
-                            <p className="mt-2 text-center font-medium text-white">{label}</p>
+                            <Icon className="w-9 h-9 md:w-12 md:h-12" color={color} />
+                            <p className="mt-2 text-center font-medium text-white text-sm md:text-base">{label}</p>
                         </div>
                     ))}
                 </div>
             </div>
         </section>
     );
-}
+};

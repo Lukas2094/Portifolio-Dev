@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 export function FooterSection() {
     return (
@@ -12,6 +12,12 @@ export function FooterSection() {
                         Você pode me contatar via email:
                         <Link href="mailto:lukas2094@gmail.com" className="text-blue-400 underline ml-1">
                             lukas2094@gmail.com
+                        </Link>
+                    </p>
+                    <p className="text-lg">
+                        Ou no WhatsApp:
+                        <Link href="https://wa.me/5511949322230" target="_blank" rel="noopener noreferrer" className="text-green-400 underline ml-1">
+                            55 (11) 949322230
                         </Link>
                     </p>
                     <div className="flex justify-center md:justify-start gap-6 text-2xl">
@@ -39,10 +45,18 @@ export function FooterSection() {
                         >
                             <FaInstagram color="#E1306C" />
                         </Link>
+                        <Link
+                            href="https://wa.me/5511949322230"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="transition transform hover:scale-110"
+                        >
+                            <FaWhatsapp color="#25D366" />
+                        </Link>
                     </div>
                 </section>
 
-                <section id="curriculo" className="space-y-6 md:w-1/2 ">
+                <section id="curriculo" className="space-y-6 md:w-1/2">
                     <h2 className="text-2xl font-bold">Currículo</h2>
                     <p className="text-lg">
                         Baixe meu currículo em PDF: <br />
