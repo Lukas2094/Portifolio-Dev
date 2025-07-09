@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 export function FooterSection() {
     return (
-        <footer className="mt-12 py-10 border-t border-gray-300 bg-[#0f172a] text-white">
+        <footer className="mt-12 py-10 bg-[#0f172a] text-white">
             <div className="flex flex-col md:flex-row justify-between gap-10 text-center md:text-left max-w-5xl mx-auto px-20">
                 <section id="contato" className="space-y-6 md:w-1/2 mr-14">
                     <h2 className="text-2xl font-bold">Contato</h2>
