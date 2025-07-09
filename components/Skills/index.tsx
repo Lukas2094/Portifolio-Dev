@@ -1,5 +1,5 @@
 import { FaReact, FaAngular, FaVuejs, FaPhp, FaNodeJs, FaPython, FaJava, FaGem, FaDatabase, FaCode, FaSass, FaLaravel } from 'react-icons/fa';
-import { SiNextdotjs, SiNuxtdotjs, SiMysql, SiMongodb, SiPostgresql, SiTypescript, SiGraphql, SiRedis, SiSharp, SiGo, SiHtml5, SiCss3, SiJavascript, SiRuby, SiShell, SiDocker, SiKubernetes, SiJest, SiCypress, SiSwagger, SiFirebase, SiVite, SiTailwindcss, SiPrisma, SiEslint, SiPrettier, SiRedux, SiReactrouter, SiNestjs, SiZendesk, SiPrimevue, SiVuetify } from 'react-icons/si';
+import { SiNextdotjs, SiNuxtdotjs, SiMysql, SiMongodb, SiPostgresql, SiTypescript, SiGraphql, SiRedis, SiSharp, SiGo, SiHtml5, SiCss3, SiJavascript, SiRuby, SiShell, SiDocker, SiKubernetes, SiJest, SiCypress, SiSwagger, SiFirebase, SiVite, SiTailwindcss, SiPrisma, SiEslint, SiPrettier, SiRedux, SiReactrouter, SiNestjs, SiZendesk, SiPrimevue, SiVuetify, SiReactquery } from 'react-icons/si';
 
 const skills = {
     frontend: [
@@ -32,6 +32,7 @@ const skills = {
         { icon: SiGraphql, label: 'GraphQL', color: '#e535ab' },
         { icon: SiRedux, label: 'Redux', color: '#764abc' },
         { icon: SiReactrouter, label: 'React Router', color: '#ca4245' },
+        { icon: SiReactquery, label: 'React Query', color: '#FF4154' },
         { icon: FaCode, label: 'REST APIs', color: '#61dafb' },
         { icon: FaCode, label: 'JSON, XML', color: '#f0db4f' },
         { icon: FaCode, label: 'styled-components', color: '#db7093' },
