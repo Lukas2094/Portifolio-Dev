@@ -63,6 +63,8 @@ const languageIcons: Record<string, ReactElement> = {
 
 export function ProjectsPage({ repos }: { repos: Repo[] }) {
   const [visibleCount, setVisibleCount] = useState(4);
+  console.log(repos);
+  
 
   const sortedRepos = [...repos].sort((a, b) => a.name.localeCompare(b.name));
 

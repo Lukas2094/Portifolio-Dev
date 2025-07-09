@@ -1,5 +1,5 @@
 import { ProjectsPage } from "@/components/Projects";
-import { getGitHubProfile, getGitHubProjects } from "@/lib/github";
+import { getGitHubProjects } from "@/lib/github";
 
 export const dynamic = 'force-dynamic';
 
