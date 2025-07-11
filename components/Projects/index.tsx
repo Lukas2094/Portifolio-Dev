@@ -70,15 +70,15 @@ export function ProjectsPage({ repos }: { repos: Repo[] }) {
             href={repo.html_url}
             target="_blank"
             rel="noopener noreferrer"
-            className="block border border-gray-300 bg-white dark:bg-[#1b1f3b] dark:border-gray-700 p-5 rounded-xl shadow-md hover:shadow-lg hover:-translate-y-1 transform transition-all duration-300"
+            className="block border border-gray-300 bg-[#1b1f3b] dark:bg-[#1b1f3b] dark:border-gray-700 p-5 rounded-xl shadow-md hover:shadow-lg hover:-translate-y-1 transform transition-all duration-300"
           >
             <div className="flex items-center gap-2 mb-2">
-              <h3 className="font-semibold text-base md:text-lg text-blue-600 dark:text-white truncate">
+              <h3 className="font-semibold text-base md:text-lg text-white dark:text-white truncate">
                 {repo.name}
               </h3>
               {repo.language && languageIcons[repo.language]}
             </div>
-            <p className="text-sm text-gray-600 dark:text-gray-300 mt-1 line-clamp-3">
+            <p className="text-sm text-gray-300 dark:text-gray-300 mt-1 line-clamp-3">
               {repo.description || "Sem descrição disponível."}
             </p>
           </a>
