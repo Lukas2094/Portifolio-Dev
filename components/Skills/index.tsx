@@ -1,13 +1,14 @@
 'use client';
 
 import { FaReact, FaAngular, FaVuejs, FaPhp, FaNodeJs, FaPython, FaJava, FaGem, FaDatabase, FaCode, FaSass, FaLaravel } from 'react-icons/fa';
-import { SiNextdotjs, SiNuxtdotjs, SiMysql, SiMongodb, SiPostgresql, SiTypescript, SiGraphql, SiRedis, SiSharp, SiGo, SiHtml5, SiCss3, SiJavascript, SiRuby, SiShell, SiDocker, SiKubernetes, SiJest, SiCypress, SiSwagger, SiFirebase, SiVite, SiTailwindcss, SiPrisma, SiEslint, SiPrettier, SiRedux, SiReactrouter, SiNestjs, SiZendesk, SiPrimevue, SiVuetify, SiReactquery, SiChakraui, SiGatsby } from 'react-icons/si';
+import { SiNextdotjs, SiNuxtdotjs, SiMysql, SiMongodb, SiPostgresql, SiTypescript, SiGraphql, SiRedis, SiSharp, SiGo, SiHtml5, SiCss3, SiJavascript, SiRuby, SiShell, SiDocker, SiKubernetes, SiJest, SiCypress, SiSwagger, SiFirebase, SiVite, SiTailwindcss, SiPrisma, SiEslint, SiPrettier, SiRedux, SiReactrouter, SiNestjs, SiZendesk, SiPrimevue, SiVuetify, SiReactquery, SiChakraui, SiGatsby, SiExpo, SiJson, SiXml } from 'react-icons/si';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { TbBrandReactNative } from 'react-icons/tb';
+import { MdApi } from 'react-icons/md';
 
 const skills = {
     frontend: [
@@ -41,8 +42,8 @@ const skills = {
         { icon: SiRedux, label: 'Redux', color: '#764abc' },
         { icon: SiReactrouter, label: 'React Router', color: '#ca4245' },
         { icon: SiReactquery, label: 'React Query', color: '#FF4154' },
-        { icon: FaCode, label: 'REST APIs', color: '#61dafb' },
-        { icon: FaCode, label: 'JSON, XML', color: '#f0db4f' },
+        { icon: MdApi, label: 'REST APIs', color: '#61dafb' },
+        { icon: SiJson, label: 'JSON, XML', color: '#f0db4f' },
         { icon: FaCode, label: 'styled-comp.', color: '#db7093' },
         { icon: FaCode, label: 'Material UI', color: '#007FFF' },
         { icon: SiChakraui, label: 'Chakraui', color: '#034383' },
@@ -58,6 +59,7 @@ const skills = {
         { icon: SiTailwindcss, label: 'Tailwind CSS', color: '#06B6D4' },
         { icon: SiPrisma, label: 'Prisma ORM', color: '#2D3748' },
         { icon: SiEslint, label: 'ESLint', color: '#4B32C3' },
+        { icon: SiExpo, label: 'Expo', color: '#5F978F' },
     ],
 };
 
