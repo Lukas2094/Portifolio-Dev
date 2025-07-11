@@ -7,6 +7,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { TbBrandReactNative } from 'react-icons/tb';
 
 const skills = {
     frontend: [
@@ -16,6 +17,7 @@ const skills = {
         { icon: SiCss3, label: 'CSS3', color: '#264de4' },
         { icon: FaReact, label: 'React', color: '#61dafb' },
         { icon: SiNextdotjs, label: 'Next.js', color: '#000000' },
+        { icon: TbBrandReactNative, label: 'React Native', color: '#61DAFB' },
         { icon: FaAngular, label: 'Angular', color: '#dd0031' },
         { icon: FaVuejs, label: 'Vue.js', color: '#42b883' },
         { icon: SiNuxtdotjs, label: 'Nuxt.js', color: '#00c58e' },
