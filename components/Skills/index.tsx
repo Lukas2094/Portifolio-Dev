@@ -1,7 +1,7 @@
 'use client';
 
 import { FaReact, FaAngular, FaVuejs, FaPhp, FaNodeJs, FaPython, FaJava, FaGem, FaDatabase, FaCode, FaSass, FaLaravel } from 'react-icons/fa';
-import { SiNextdotjs, SiNuxtdotjs, SiMysql, SiMongodb, SiPostgresql, SiTypescript, SiGraphql, SiRedis, SiSharp, SiGo, SiHtml5, SiCss3, SiJavascript, SiRuby, SiShell, SiDocker, SiKubernetes, SiJest, SiCypress, SiSwagger, SiFirebase, SiVite, SiTailwindcss, SiPrisma, SiEslint, SiPrettier, SiRedux, SiReactrouter, SiNestjs, SiZendesk, SiPrimevue, SiVuetify, SiReactquery, SiChakraui } from 'react-icons/si';
+import { SiNextdotjs, SiNuxtdotjs, SiMysql, SiMongodb, SiPostgresql, SiTypescript, SiGraphql, SiRedis, SiSharp, SiGo, SiHtml5, SiCss3, SiJavascript, SiRuby, SiShell, SiDocker, SiKubernetes, SiJest, SiCypress, SiSwagger, SiFirebase, SiVite, SiTailwindcss, SiPrisma, SiEslint, SiPrettier, SiRedux, SiReactrouter, SiNestjs, SiZendesk, SiPrimevue, SiVuetify, SiReactquery, SiChakraui, SiGatsby } from 'react-icons/si';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -46,6 +46,7 @@ const skills = {
         { icon: FaCode, label: 'styled-comp.', color: '#db7093' },
         { icon: FaCode, label: 'Material UI', color: '#007FFF' },
         { icon: SiChakraui, label: 'Chakraui', color: '#034383' },
+        { icon: SiGatsby, label: 'Gatsby', color: '#663399' },
         { icon: FaSass, label: 'SASS / SCSS', color: '#cd6799' },
         { icon: SiPrimevue, label: 'PrimeVue', color: '#3B82F6' },
         { icon: SiVuetify, label: 'Vuetify', color: '#1867C0' },
