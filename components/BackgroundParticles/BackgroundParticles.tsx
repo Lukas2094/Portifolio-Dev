@@ -17,11 +17,13 @@ export default function BackgroundParticles() {
                 fullScreen: { enable: true, zIndex: -1 },
                 background: { color: '#1a1a2e' },
                 particles: {
-                    number: { value: 180 },
-                    color: { value: '#e94560' },
+                    number: { value: 150 },
+                    color: {
+                        value: ['#008CFF', '#39ff14', '#FF073A', '#FFC300'],
+                    },
                     links: {
                         enable: true,
-                        color: '#e94560',
+                        color: '#ffffff',
                         distance: 150,
                         opacity: 0.3,
                         width: 1,
@@ -52,3 +54,10 @@ export default function BackgroundParticles() {
         />
     );
 }
+
+
+// number: { value: 180 },
+// color: { value: '#e94560' },
+// links: {
+//     enable: true,
+//         color: '#e94560',

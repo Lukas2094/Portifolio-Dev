@@ -44,3 +44,8 @@ body {
   scrollbar-width: auto;
   scrollbar-color: #0cc9ea #1e1e1e;
 }
+
+
+[id] {
+  scroll-margin-top: 100px; /* ajuste ao seu header */
+}
