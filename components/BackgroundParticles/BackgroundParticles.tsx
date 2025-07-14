@@ -23,7 +23,7 @@ export default function BackgroundParticles() {
                     },
                     links: {
                         enable: true,
-                        color: '#ffffff',
+                        color: '#e94560',
                         distance: 150,
                         opacity: 0.3,
                         width: 1,
