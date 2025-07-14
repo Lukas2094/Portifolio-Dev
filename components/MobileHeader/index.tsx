@@ -49,10 +49,10 @@ export function MobileHeader() {
                 </div>
 
                 <nav className={`${open ? 'flex' : 'hidden'} transition-all duration-500 ease-in-out flex-col mt-4 gap-3 text-sm md:flex md:flex-row md:items-center md:mt-0 md:gap-4 md:text-base md:mr-30`}>
-                    <button onClick={() => handleLinkClick('sobremim')} className="cursor-pointer hover:text-purple-300 transition">Sobre Mim</button>
-                    <button onClick={() => handleLinkClick('habilidades')} className="cursor-pointer hover:text-purple-300 transition">Habilidades</button>
+                    <button onClick={() => handleLinkClick('sobremim')} className="cursor-pointer hover:text-purple-300 transition text-left">Sobre Mim</button>
+                    <button onClick={() => handleLinkClick('habilidades')} className="cursor-pointer hover:text-purple-300 transition text-left">Habilidades</button>
                     <Link href="/projects" onClick={() => handleLinkClick()} className="cursor-pointer hover:text-purple-300 transition">Projetos</Link>
-                    <button onClick={() => handleLinkClick('contato')} className="cursor-pointer hover:text-purple-300 transition">Contato</button>
+                    <button onClick={() => handleLinkClick('contato')} className="cursor-pointer hover:text-purple-300 transition text-left">Contato</button>
                     <Link href={"/pdf/curriculo.pdf"} download className="cursor-pointer hover:text-purple-300 transition">Currículo</Link>
                     <a
                         href="https://github.com/Lukas2094"
