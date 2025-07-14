@@ -1,12 +1,21 @@
 'use client';
 
-import { useCallback } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import Particles from 'react-tsparticles';
 import { loadSlim } from 'tsparticles-slim';
 
 export default function BackgroundParticles() {
     const particlesInit = useCallback(async (engine: any) => {
         await loadSlim(engine);
+    }, []);
+
+    const [particleCount, setParticleCount] = useState(150);
+
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            const isMobile = window.innerWidth <= 968;
+            setParticleCount(isMobile ? 50 : 150); 
+        }
     }, []);
 
     return (
@@ -17,7 +26,7 @@ export default function BackgroundParticles() {
                 fullScreen: { enable: true, zIndex: -1 },
                 background: { color: '#1a1a2e' },
                 particles: {
-                    number: { value: 150 },
+                    number: { value: particleCount },
                     color: {
                         value: ['#008CFF', '#39ff14', '#FF073A', '#FFC300'],
                     },
@@ -54,10 +63,3 @@ export default function BackgroundParticles() {
         />
     );
 }
-
-
-// number: { value: 180 },
-// color: { value: '#e94560' },
-// links: {
-//     enable: true,
-//         color: '#e94560',
