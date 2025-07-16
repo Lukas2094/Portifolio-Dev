@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import GitHubActivity from '../Gitcalendar';
 
 interface Repo {
   id: number;
@@ -51,6 +52,8 @@ export default function FeaturedProjectsSection({ repos }: { repos: FeaturedRepo
           Veja mais projetos &rarr;
         </Link>
       </div>
+
+      <GitHubActivity />
     </section>
   );
 };
