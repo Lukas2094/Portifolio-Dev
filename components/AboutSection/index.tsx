@@ -32,7 +32,7 @@ export function AboutSection(profile: any) {
 
                 <div className="md:w-1/2 flex justify-end">
                     <img
-                        src={profile.profile?.avatar_url || '/imgs/LS-Logo.png'}
+                        src={profile.profile?.avatar_url ? profile.profile.avatar_url : '/imgs/LS-Logo.png'}
                         alt={profile.profile?.name || "Avatar do perfil"}
                         className="rounded-full shadow-lg max-w-xs md:max-w-sm object-cover"
                     />
