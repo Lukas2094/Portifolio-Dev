@@ -53,7 +53,7 @@ export function MobileHeader() {
                     <button onClick={() => handleLinkClick('habilidades')} className="cursor-pointer hover:text-purple-300 transition text-left">Habilidades</button>
                     <Link href="/projects" onClick={() => handleLinkClick()} className="cursor-pointer hover:text-purple-300 transition">Projetos</Link>
                     <button onClick={() => handleLinkClick('contato')} className="cursor-pointer hover:text-purple-300 transition text-left">Contato</button>
-                    <Link href={"doc/curriculo.docx"} download className="cursor-pointer hover:text-purple-300 transition">Currículo</Link>
+                    <Link href={"pdf/curriculo.pdf"} download className="cursor-pointer hover:text-purple-300 transition">Currículo</Link>
                     <a
                         href="https://github.com/Lukas2094"
                         target="_blank"

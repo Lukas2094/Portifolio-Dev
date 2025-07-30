@@ -47,7 +47,7 @@ export function FooterSection() {
             <h2 className="text-xl md:text-2xl font-bold text-center md:text-left">Currículo</h2>
             <p className="text-base md:text-lg text-center md:text-left">
               Baixe meu currículo aqui:
-              <Link href={"doc/curriculo.docx"} download className="text-blue-400 underline ml-1">
+              <Link href={"pdf/curriculo.pdf"} download className="text-blue-400 underline ml-1">
                 Clique aqui
               </Link>
             </p>
