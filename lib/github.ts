@@ -25,7 +25,7 @@ export async function getGitHubProfile() {
 };
 
 export async function getFeaturedGitHubProjects() {
-  const repos = ['bank-app', 'System-Storage-FrontEnd', 'System-Storage-BackEnd', 'NetflixFrontEnd'];
+  const repos = ['bank-app', 'System-Storage-FrontEnd', 'System-Storage-BackEnd', 'IA-Generator'];
 
   const headers = {
     Authorization: `Bearer ${GITHUB_TOKEN}`,
