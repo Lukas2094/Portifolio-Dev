@@ -28,14 +28,14 @@ export default function BackgroundParticles() {
                 particles: {
                     number: { value: particleCount },
                     color: {
-                        value: ['#008CFF', '#39ff14', '#FF073A', '#FFC300'],
+                        value: ['#1485e0', '#3e7733', '#550b9b', '#bb9721'],
                     },
                     links: {
                         enable: true,
-                        color: '#e94560',
-                        distance: 150,
+                        color: '#1b7c7c',
+                        distance: 110,
                         opacity: 0.3,
-                        width: 1,
+                        width: 3,
                     },
                     move: {
                         enable: true,
