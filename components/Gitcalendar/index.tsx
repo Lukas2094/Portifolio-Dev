@@ -6,7 +6,7 @@ export default function GitHubActivity() {
   return (
     <section className="w-full flex flex-col items-center py-10 px-4 overflow-hidden">
       <h2 className="text-2xl font-bold text-white mb-4">
-        Atividades no GitHub {new Date().getFullYear()}
+        Atividades no GitHub no último ano
       </h2>
 
       <div className="w-full max-w-6xl bg-black p-4 rounded-lg shadow-md">
@@ -28,7 +28,6 @@ export default function GitHubActivity() {
                 weekdays: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'],
                 totalCount: '{{count}} contribuições no último ano',
               }}
-              year={new Date().getFullYear()}
             />
           </div>
         </div>
